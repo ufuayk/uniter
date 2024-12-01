@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="light">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üniter Asistan</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fa.all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="container py-5">
+        <h1 class="text-left mb-5"><i class="fa-solid fa-graduation-cap uniter-cap"></i><strong> Üniter Asistan</strong></h1>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-search"></i>
+                        <label class="form-label">Bölüm Ara</label>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Bölüm adı girin">
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <label class="form-label">Sıralama</label>
+                        <input type="number" class="form-control" id="siralama" placeholder="Sıralamanızı girin">
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <label class="form-label">Puan Türü</label>
+                        <select class="form-select" id="puanTuru">
+                            <option value="say">SAYISAL</option>
+                            <option value="ea">EŞİT AĞIRLIK</option>
+                            <option value="dil">Dil</option>
+                            <option value="söz">SÖZEL</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa-solid fa-city"></i>
+                        <label class="form-label">Şehir</label>
+                        <select class="form-select" id="sehir">
+                            <option value="">TÜMÜ</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <label class="form-label">Üniversite Türü</label>
+                        <select class="form-select" id="uniTur">
+                            <option value="">TÜMÜ</option>
+                            <option value="DEVLET">DEVLET</option>
+                            <option value="VAKIF">VAKIF</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="row"></div>
+        
+        <div class="d-flex justify-content-center mt-4">
+            <nav aria-label="Sayfa navigasyonu">
+                <ul class="pagination" id="pagination"></ul>
+            </nav>
+        </div>
+
+        <div id="loading" class="text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Yükleniyor...</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-0 py-3">
+        <div class="container text-center">
+            <small class="text-muted">
+                <a href="https://github.com/ufuayk" target="_blank" class="text-decoration-none">Ufuayk</a> tarafından <i class="fa-solid fa-heart"></i> ile oluşturuldu.
+                <span class="mx-2">|</span>
+                <span>Bu sitede kullanılan tüm veriler <a href="https://yokatlas.yok.gov.tr/" target="_blank" class="text-decoration-none">YÖK Atlas</a>'tan alınmıştır. Tüm hakları <a href="https://www.yok.gov.tr/" target="_blank" class="text-decoration-none">Yükseköğretim Kurulu</a>'na aittir.</span>
+                <span class="mx-2">|</span>
+                <a href="#" onclick="toggleTheme()" class="text-decoration-none">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </a>
+            </small>
+        </div>
+    </footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
