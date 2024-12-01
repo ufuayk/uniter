@@ -2,12 +2,13 @@
 
 Üniter Asistan, üniversite adaylarının YKS sınavı sonrası tercih döneminde kullanabilecekleri bir yardımcı web uygulamasıdır. 
 
-Bu site, öğrencilerin sıralamalarına göre yerleşebilecekleri bölümleri kolayca bulmalarını sağlar.
-
 👉 https://ufuayk.github.io/uniter
 
+> [!WARNING]
+> Bu web sitesi eğitim amacıyla hazırlanmıştır. Bir veri kaynağı ihlali varsa, lütfen irtibata geçin.
+
 > [!NOTE]
-> Bu projede kullanılan tüm veriler [YÖK Atlas](https://yokatlas.yok.gov.tr/)'tan alınmıştır. Telif hakları Yükseköğretim Kurulu'na aittir.
+> Bu projede kullanılan tüm veriler [YÖK Atlas](https://yokatlas.yok.gov.tr/)'tan alınmıştır. Tüm hakları Yükseköğretim Kurulu'na aittir.
 
 ## 🌟 Özellikler
 
